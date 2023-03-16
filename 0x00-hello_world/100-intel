@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel -fverbose-asm $CFILE -o  "$(printf "$CFILE\n" | cut -d "." -f 1).s"
+gcc -S -masm=intel $CFILE -o  "$(printf "$CFILE\n" | cut -d "." -f 1).s"
