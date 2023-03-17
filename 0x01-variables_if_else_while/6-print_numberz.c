@@ -10,13 +10,12 @@
 int main(void)
 {
 	int n = 48;
-	char term = '\n';
 
 	while (n < 58)
 	{
 		putchar(n++);
 	}
 
-	putchar(((int)term));
+	putchar(((int)'\n'));
 	return (0);
 }
