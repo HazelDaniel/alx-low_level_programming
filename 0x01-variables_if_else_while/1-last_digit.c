@@ -16,7 +16,6 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	l_digit = n % 10;
-	printf("%d\n",n);
 
 	if (l_digit >= 6)
 	{
