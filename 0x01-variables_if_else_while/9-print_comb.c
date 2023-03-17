@@ -15,8 +15,10 @@ int main(void)
 	{
 		putchar(n++);
 		if (n != 58)
+		{
 			putchar(44);
-		putchar((int)' ');
+			putchar((int)' ');
+		}
 	}
 
 	putchar(((int)'\n'));
