@@ -1,0 +1,49 @@
+#include "main.h"
+
+/**
+* times_table - check the code
+*
+* Return: Always void.
+*/
+
+void times_table(void)
+{
+	int num_array[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int index;
+	int l_index = 9;
+
+	for (index = 0; index <= l_index; index++)
+	{
+		int inner_index;
+
+		for (inner_index = 0; inner_index <= l_index; inner_index++)
+		{
+			int product = num_array[inner_index] * index;
+
+			if (product >= 10)
+			{
+				if (inner_index != 0)
+					_putchar((int)' ');
+				_putchar(((int)(product / 10)) + 48);
+				_putchar((product % 10) + 48);
+				if (inner_index != 9)
+					_putchar((int)',');
+				else
+					_putchar((int)'\n');
+			}
+			else if (product >= 0)
+			{
+				if (inner_index != 0)
+				{
+					_putchar((int)' ');
+					_putchar((int)' ');
+				}
+				_putchar(product + 48);
+				if (inner_index != 9)
+					_putchar((int)',');
+				else
+					_putchar((int)'\n');
+			}
+		}
+	}
+}
