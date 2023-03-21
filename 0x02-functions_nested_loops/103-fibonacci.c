@@ -13,6 +13,7 @@ int main(void)
 
 	int index = 0;
 	int even_index = 0;
+	unsigned long even_acc = 0;
 
 	while (index++ < 50)
 	{
@@ -32,7 +33,8 @@ int main(void)
 	}
 	for (even_index = 0; even_index < 11; even_index++)
 	{
-		printf("%lu\n",even_fibon_array[even_index]);
+		even_acc += even_fibon_array[even_index];
 	}
+		printf("%lu\n",even_acc);
 	return (0);
 }
