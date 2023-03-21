@@ -17,7 +17,7 @@ int main(void)
 		267914296, 433494437, 701408733, 1134903170,
 		1836311903, 2971215073, 4807526976,
 		7778742049};
-	unsigned long even_fibon_array [11];
+	unsigned long even_fibon_array[11];
 
 	int index = 0;
 	int even_index = 0;
