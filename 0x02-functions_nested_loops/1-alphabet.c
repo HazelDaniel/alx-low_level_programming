@@ -1,13 +1,6 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-
-
-/**
 * print_alphabet - a function that prints all the lower case alphabets
 *
 * Return: Always void

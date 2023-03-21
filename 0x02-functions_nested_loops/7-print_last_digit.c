@@ -2,7 +2,7 @@
 
 /**
 * print_last_digit - check the code
-* @x - integer parameter
+* @x: integer parameter
 * Return: Always int.
 */
 

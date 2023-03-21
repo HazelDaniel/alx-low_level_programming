@@ -2,7 +2,7 @@
 
 /**
 * _isalpha - check the code
-* @c - an integer parameter
+* @c: an integer parameter
 * Return: Always int.
 */
 

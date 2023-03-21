@@ -2,7 +2,7 @@
 
 /**
 * _islower - check the code
-*
+* @c: an integer parameter
 * Return: Always int.
 */
 

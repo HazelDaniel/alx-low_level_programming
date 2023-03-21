@@ -2,7 +2,7 @@
 
 /**
 * print_sign - check the code
-*
+* @n: parameter integer
 * Return: Always int.
 */
 

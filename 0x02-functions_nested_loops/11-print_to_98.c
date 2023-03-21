@@ -3,7 +3,7 @@
 
 /**
 * print_to_98 - check the code
-*
+* @x: an integer parameter
 * Return: Always void.
 */
 

@@ -3,7 +3,7 @@
 /**
 * _abs - check the code
 *
-* @x - integer parameter
+* @x: integer parameter
 * Return: Always int.
 */
 

@@ -2,8 +2,8 @@
 
 /**
 * add - check the code
-* @param x - the first operand of the addition
-* @param y - the second operand of the addition
+* @x: the first operand of the addition
+* @y: the second operand of the addition
 * Return: Always int.
 */
 

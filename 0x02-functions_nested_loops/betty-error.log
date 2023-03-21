@@ -6,9 +6,6 @@ _putchar
 main
 
 ========== ./10-add.c ==========
-./10-add.c:5: ERROR: trailing whitespace
-./10-add.c:6: ERROR: trailing whitespace
-total: 2 errors, 0 warnings, 13 lines checked
 add
 
 ========== ./4-isalpha.c ==========
@@ -17,8 +14,8 @@ _isalpha
 ========== ./8-24_hours.c ==========
 jack_bauer
 
-========== ./6-abs.c ==========
-_abs
+========== ./1-alphabet.c ==========
+print_alphabet
 
 ========== ./7-print_last_digit.c ==========
 print_last_digit
@@ -29,9 +26,6 @@ times_table
 ========== ./5-sign.c ==========
 print_sign
 
-========== ./1-alphabet.c ==========
-print_alphabet
-
 ========== ./2-print_alphabet_x10.c ==========
 print_alphabet_x10
 
@@ -39,6 +33,9 @@ print_alphabet_x10
 ./11-print_to_98.c:52: WARNING: More than 40 lines in a function
 total: 0 errors, 1 warnings, 53 lines checked
 print_to_98
+
+========== ./6-abs.c ==========
+_abs
 
 ========== ./3-islower.c ==========
 _islower
