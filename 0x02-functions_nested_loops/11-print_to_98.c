@@ -14,7 +14,7 @@ void print_to_98(int x)
 		while (x - 98 >= 0)
 		{
 			if (x - 98 != 0)
-				printf("%d,  ", x);
+				printf("%d, ", x);
 			else
 				printf("%d\n", x);
 			x--;
@@ -31,7 +31,7 @@ void print_to_98(int x)
 			while (98 - x >= 0)
 			{
 				if (98 - x != 0)
-					printf("%d,  ", x);
+					printf("%d, ", x);
 				else
 					printf("%d\n", x);
 				x++;
@@ -42,7 +42,7 @@ void print_to_98(int x)
 			while (x <= 98)
 			{
 				if (98 - x != 0)
-					printf("%d,  ", x);
+					printf("%d, ", x);
 				else
 					printf("%d\n", x);
 				x++;
