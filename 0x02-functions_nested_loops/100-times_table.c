@@ -15,6 +15,7 @@ void print_times_table(int n)
 		for (y = 0; y <= n; y++)
 		{
 			int x;
+
 			for (x = 0; x <= n; x++)
 			{
 				int product = x * y;
