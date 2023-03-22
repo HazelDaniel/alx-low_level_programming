@@ -1,0 +1,203 @@
+
+========== 0-main.c ==========
+0-main.c:10: WARNING: please, no spaces at the start of a line
+0-main.c:12: WARNING: please, no spaces at the start of a line
+0-main.c:13: WARNING: please, no spaces at the start of a line
+0-main.c:15: WARNING: please, no spaces at the start of a line
+total: 0 errors, 4 warnings, 16 lines checked
+main
+
+========== 1-main.c ==========
+1-main.c:10: WARNING: please, no spaces at the start of a line
+1-main.c:12: WARNING: please, no spaces at the start of a line
+1-main.c:14: WARNING: please, no spaces at the start of a line
+1-main.c:16: WARNING: Block comments use a leading /* on a separate line
+1-main.c:17: WARNING: Block comments use * on subsequent lines
+1-main.c:18: ERROR: code indent should use tabs where possible
+1-main.c:19: WARNING: Block comments use a trailing */ on a separate line
+1-main.c:21: WARNING: please, no spaces at the start of a line
+1-main.c:23: WARNING: please, no spaces at the start of a line
+total: 1 errors, 8 warnings, 24 lines checked
+main
+
+========== 2-largest_number.c ==========
+2-largest_number.c:13: WARNING: please, no spaces at the start of a line
+2-largest_number.c:15: WARNING: please, no spaces at the start of a line
+2-largest_number.c:16: WARNING: please, no spaces at the start of a line
+2-largest_number.c:17: ERROR: code indent should use tabs where possible
+2-largest_number.c:17: WARNING: please, no spaces at the start of a line
+2-largest_number.c:18: WARNING: please, no spaces at the start of a line
+2-largest_number.c:19: WARNING: please, no spaces at the start of a line
+2-largest_number.c:20: WARNING: please, no spaces at the start of a line
+2-largest_number.c:21: ERROR: code indent should use tabs where possible
+2-largest_number.c:21: WARNING: please, no spaces at the start of a line
+2-largest_number.c:22: WARNING: please, no spaces at the start of a line
+2-largest_number.c:23: WARNING: please, no spaces at the start of a line
+2-largest_number.c:24: WARNING: please, no spaces at the start of a line
+2-largest_number.c:25: ERROR: code indent should use tabs where possible
+2-largest_number.c:25: WARNING: please, no spaces at the start of a line
+2-largest_number.c:26: WARNING: please, no spaces at the start of a line
+2-largest_number.c:28: WARNING: please, no spaces at the start of a line
+total: 3 errors, 14 warnings, 29 lines checked
+largest_number
+
+========== 2-main.c ==========
+2-main.c:11: WARNING: please, no spaces at the start of a line
+2-main.c:12: WARNING: please, no spaces at the start of a line
+2-main.c:14: WARNING: please, no spaces at the start of a line
+2-main.c:15: WARNING: please, no spaces at the start of a line
+2-main.c:16: WARNING: please, no spaces at the start of a line
+2-main.c:18: WARNING: please, no spaces at the start of a line
+2-main.c:20: WARNING: please, no spaces at the start of a line
+2-main.c:22: WARNING: please, no spaces at the start of a line
+total: 0 errors, 8 warnings, 23 lines checked
+main
+
+========== 3-convert_day.c ==========
+3-convert_day.c:13: WARNING: please, no spaces at the start of a line
+3-convert_day.c:14: WARNING: please, no spaces at the start of a line
+3-convert_day.c:15: ERROR: code indent should use tabs where possible
+3-convert_day.c:15: WARNING: please, no spaces at the start of a line
+3-convert_day.c:16: ERROR: code indent should use tabs where possible
+3-convert_day.c:16: WARNING: please, no spaces at the start of a line
+3-convert_day.c:17: ERROR: code indent should use tabs where possible
+3-convert_day.c:17: WARNING: please, no spaces at the start of a line
+3-convert_day.c:18: ERROR: code indent should use tabs where possible
+3-convert_day.c:18: WARNING: please, no spaces at the start of a line
+3-convert_day.c:19: ERROR: code indent should use tabs where possible
+3-convert_day.c:19: WARNING: please, no spaces at the start of a line
+3-convert_day.c:20: ERROR: code indent should use tabs where possible
+3-convert_day.c:20: WARNING: please, no spaces at the start of a line
+3-convert_day.c:21: ERROR: code indent should use tabs where possible
+3-convert_day.c:21: WARNING: please, no spaces at the start of a line
+3-convert_day.c:22: ERROR: code indent should use tabs where possible
+3-convert_day.c:22: WARNING: please, no spaces at the start of a line
+3-convert_day.c:23: ERROR: code indent should use tabs where possible
+3-convert_day.c:23: WARNING: please, no spaces at the start of a line
+3-convert_day.c:24: ERROR: code indent should use tabs where possible
+3-convert_day.c:24: WARNING: please, no spaces at the start of a line
+3-convert_day.c:25: ERROR: code indent should use tabs where possible
+3-convert_day.c:25: WARNING: please, no spaces at the start of a line
+3-convert_day.c:26: ERROR: code indent should use tabs where possible
+3-convert_day.c:26: WARNING: please, no spaces at the start of a line
+3-convert_day.c:27: ERROR: code indent should use tabs where possible
+3-convert_day.c:27: WARNING: please, no spaces at the start of a line
+3-convert_day.c:28: ERROR: code indent should use tabs where possible
+3-convert_day.c:28: WARNING: please, no spaces at the start of a line
+3-convert_day.c:29: ERROR: code indent should use tabs where possible
+3-convert_day.c:29: WARNING: please, no spaces at the start of a line
+3-convert_day.c:30: ERROR: code indent should use tabs where possible
+3-convert_day.c:30: WARNING: please, no spaces at the start of a line
+3-convert_day.c:31: ERROR: code indent should use tabs where possible
+3-convert_day.c:31: WARNING: please, no spaces at the start of a line
+3-convert_day.c:32: ERROR: code indent should use tabs where possible
+3-convert_day.c:32: WARNING: please, no spaces at the start of a line
+3-convert_day.c:33: ERROR: code indent should use tabs where possible
+3-convert_day.c:33: WARNING: please, no spaces at the start of a line
+3-convert_day.c:34: ERROR: code indent should use tabs where possible
+3-convert_day.c:34: WARNING: please, no spaces at the start of a line
+3-convert_day.c:35: ERROR: code indent should use tabs where possible
+3-convert_day.c:35: WARNING: please, no spaces at the start of a line
+3-convert_day.c:36: ERROR: code indent should use tabs where possible
+3-convert_day.c:36: WARNING: please, no spaces at the start of a line
+3-convert_day.c:37: ERROR: code indent should use tabs where possible
+3-convert_day.c:37: WARNING: please, no spaces at the start of a line
+3-convert_day.c:38: ERROR: code indent should use tabs where possible
+3-convert_day.c:38: WARNING: please, no spaces at the start of a line
+3-convert_day.c:39: ERROR: code indent should use tabs where possible
+3-convert_day.c:39: WARNING: please, no spaces at the start of a line
+3-convert_day.c:40: ERROR: code indent should use tabs where possible
+3-convert_day.c:40: WARNING: please, no spaces at the start of a line
+3-convert_day.c:41: ERROR: code indent should use tabs where possible
+3-convert_day.c:41: WARNING: please, no spaces at the start of a line
+3-convert_day.c:42: ERROR: code indent should use tabs where possible
+3-convert_day.c:42: WARNING: please, no spaces at the start of a line
+3-convert_day.c:43: ERROR: code indent should use tabs where possible
+3-convert_day.c:43: WARNING: please, no spaces at the start of a line
+3-convert_day.c:44: ERROR: code indent should use tabs where possible
+3-convert_day.c:44: WARNING: please, no spaces at the start of a line
+3-convert_day.c:45: ERROR: code indent should use tabs where possible
+3-convert_day.c:45: WARNING: please, no spaces at the start of a line
+3-convert_day.c:46: ERROR: code indent should use tabs where possible
+3-convert_day.c:46: WARNING: please, no spaces at the start of a line
+3-convert_day.c:47: ERROR: code indent should use tabs where possible
+3-convert_day.c:47: WARNING: please, no spaces at the start of a line
+3-convert_day.c:48: ERROR: code indent should use tabs where possible
+3-convert_day.c:49: ERROR: code indent should use tabs where possible
+3-convert_day.c:49: WARNING: please, no spaces at the start of a line
+3-convert_day.c:50: WARNING: please, no spaces at the start of a line
+3-convert_day.c:51: WARNING: please, no spaces at the start of a line
+total: 35 errors, 38 warnings, 52 lines checked
+convert_day
+
+========== 3-main_a.c ==========
+3-main_a.c:12: WARNING: please, no spaces at the start of a line
+3-main_a.c:13: WARNING: please, no spaces at the start of a line
+3-main_a.c:14: WARNING: please, no spaces at the start of a line
+3-main_a.c:16: WARNING: please, no spaces at the start of a line
+3-main_a.c:17: WARNING: please, no spaces at the start of a line
+3-main_a.c:18: WARNING: please, no spaces at the start of a line
+3-main_a.c:20: WARNING: please, no spaces at the start of a line
+3-main_a.c:22: WARNING: please, no spaces at the start of a line
+3-main_a.c:24: WARNING: please, no spaces at the start of a line
+3-main_a.c:26: WARNING: please, no spaces at the start of a line
+total: 0 errors, 10 warnings, 27 lines checked
+main
+
+========== 3-main_b.c ==========
+3-main_b.c:12: WARNING: please, no spaces at the start of a line
+3-main_b.c:13: WARNING: please, no spaces at the start of a line
+3-main_b.c:14: WARNING: please, no spaces at the start of a line
+3-main_b.c:16: WARNING: please, no spaces at the start of a line
+3-main_b.c:17: WARNING: please, no spaces at the start of a line
+3-main_b.c:18: WARNING: please, no spaces at the start of a line
+3-main_b.c:20: WARNING: please, no spaces at the start of a line
+3-main_b.c:22: WARNING: please, no spaces at the start of a line
+3-main_b.c:24: WARNING: please, no spaces at the start of a line
+3-main_b.c:26: WARNING: please, no spaces at the start of a line
+total: 0 errors, 10 warnings, 27 lines checked
+main
+
+========== 3-print_remaining_days.c ==========
+3-print_remaining_days.c:15: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:16: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:17: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:17: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:17: WARNING: suspect code indent for conditional statements (8, 12)
+3-print_remaining_days.c:18: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:18: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:19: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:19: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:20: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:20: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:22: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:22: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:23: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:23: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:24: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:25: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:26: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:27: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:27: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:27: WARNING: suspect code indent for conditional statements (8, 12)
+3-print_remaining_days.c:28: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:28: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:29: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:29: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:30: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:30: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:31: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:31: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:32: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:32: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:33: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:33: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:34: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:34: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:35: ERROR: code indent should use tabs where possible
+3-print_remaining_days.c:35: WARNING: please, no spaces at the start of a line
+3-print_remaining_days.c:36: WARNING: please, no spaces at the start of a line
+total: 15 errors, 23 warnings, 37 lines checked
+print_remaining_days
+
+========== positive_or_negative.c ==========
