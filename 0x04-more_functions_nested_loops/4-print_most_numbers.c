@@ -4,7 +4,7 @@
  * print_most_numbers - A function that prints digits
  * except 2 and 4
  * Return - always void
- * */
+ **/
 
 void print_most_numbers(void)
 {

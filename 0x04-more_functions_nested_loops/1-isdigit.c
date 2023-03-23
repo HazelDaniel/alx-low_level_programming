@@ -1,8 +1,7 @@
 /**
- * _is_digit - a function that checks for a digit (0 through 9).
+ * _isdigit - a function that checks for a digit (0 through 9).
  * Return - 1 if digit, otherwise 0
- * @c: a character parameter
- *
+ * @c: a character parameter read as int
  */
 
 int _isdigit(int c)

@@ -16,7 +16,7 @@ void print_number(int n)
 		}
 		else
 			{
-			print_number(n/10);
+			print_number(n / 10);
 			_putchar((n % 10) + 48);
 		}
 		first_dig(n);
@@ -50,14 +50,24 @@ int first_dig(int x)
 	return ((init_x / power(10, po)));
 }
 
-int power(int a, int b) {
+/**
+ * power - returns the value of an integer
+ * raised to the power (another integer)
+ * @a: integer parameter
+ * @b: integer parameter
+ * Returns - integer type
+ **/
+
+int power(int a, int b)
+{
 	int result = 1;
-	while (b > 0) {
-		if (b % 2 == 1) {
+
+	while (b > 0)
+	{
+		if (b % 2 == 1)
 			result *= a;
-		}
 		a *= a;
 		b /= 2;
 	}
-	return result;
+	return (result);
 }

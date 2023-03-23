@@ -2,8 +2,8 @@
  * mul - a function that multiplies two integers
  * @a: an integer parameter
  * @b: an integer parameter
- * Returns - the product
- * */
+ * Returns - always int
+ **/
 
 int mul(int a, int b)
 {

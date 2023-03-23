@@ -6,11 +6,12 @@
  * as the given parameter
  * @n: the integer parameter
  * Return - void
- * */
+ **/
 
 void print_line(int n)
 {
-	if (n <= 0){
+	if (n <= 0)
+	{
 		_putchar((int)'\n');
 	}
 	else

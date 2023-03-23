@@ -5,19 +5,19 @@
 /**
  * main - The entry point into the program
  * Returns - always void
- * */
+ **/
 
 int main(void)
 {
 	prime_factor();
-	return 0;
+	return (0);
 }
 
 /**
  * prime_factor - a function that prints
  * prime factors of 612852475143
  * Returns - always void
- * */
+ **/
 
 void prime_factor(void)
 {
@@ -26,22 +26,22 @@ void prime_factor(void)
 	long counter;
 	long p_f;
 
-	for(counter = 1; counter <= sqrt(num); counter ++)
+	for (counter = 1; counter <= sqrt(num); counter++)
 	{
 		p_f = (6 * counter) - 1;
-		if(num % p_f == 0)
+		if (num % p_f == 0)
 		{
 			if (p_f >= highest_PF)
 				highest_PF = p_f;
 
 		}
 		p_f = (6 * counter) + 1;
-		if(num % p_f == 0)
+		if (num % p_f == 0)
 		{
 			if (p_f >= highest_PF)
 				highest_PF = p_f;
 		}
 	}
-	printf("%ld\n",highest_PF);
+	printf("%ld\n", highest_PF);
 
 }

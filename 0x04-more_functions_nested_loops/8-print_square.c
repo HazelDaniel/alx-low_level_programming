@@ -8,13 +8,15 @@
  * as the given parameter
  * @size: the integer parameter
  * Return - void
- * */
+ **/
 
 void print_square(int size)
 {
 	int i;
 	int j;
-	if (size <= 0){
+
+	if (size <= 0)
+	{
 		_putchar((int)'\n');
 	}
 	else

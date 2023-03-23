@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - a function that prints the numbers from 1 to 100,
+ * main - a function that prints the numbers from 1 to 100,
  * followed by a new line
  * But for multiples of three print Fizz
  * instead of the number
  * and for the multiples of five print Buzz
  * For numbers which are multiples of both
  * print FizzBuzz
- * */
+ *
+ * Returns - always int
+ **/
 
-int main (void)
+int main(void)
 {
 	int num;
 
@@ -30,9 +32,9 @@ int main (void)
 		}
 		else
 		{
-			printf("%d ",num);
+			printf("%d ", num);
 		}
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
