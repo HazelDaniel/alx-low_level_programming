@@ -9,7 +9,7 @@
  * For numbers which are multiples of both
  * print FizzBuzz
  *
- * Returns - always int
+ * Return: - always int
  **/
 
 int main(void)
@@ -20,15 +20,24 @@ int main(void)
 	{
 		if (num % 3 == 0 && num % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			if (num != 100)
+				printf("FizzBuzz ");
+			else
+				printf("FizzBuzz");
 		}
 		else if (num % 3 == 0)
 		{
-			printf("Fizz ");
+			if (num != 100)
+				printf("Fizz ");
+			else
+				printf("Fizz");
 		}
 		else if (num % 5 == 0)
 		{
-			printf("Buzz ");
+			if (num != 100)
+				printf("Buzz ");
+			else
+				printf("Buzz");
 		}
 		else
 		{
