@@ -3,7 +3,7 @@
 /**
  * print_number - prints any given number digit wise
  * @n: integer parameter
- * Returns - void
+ * Return: - void
  **/
 
 void print_number(int n)
@@ -35,7 +35,7 @@ void print_number(int n)
 /**
  * first_dig - prints any given number digit wise
  * @x: integer parameter
- * Returns - integer type
+ * Return: - integer type
  **/
 
 int first_dig(int x)
@@ -55,7 +55,7 @@ int first_dig(int x)
  * raised to the power (another integer)
  * @a: integer parameter
  * @b: integer parameter
- * Returns - integer type
+ * Return: - integer type
  **/
 
 int power(int a, int b)
