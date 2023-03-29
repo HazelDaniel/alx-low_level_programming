@@ -23,12 +23,8 @@ char *_strcat(char *dest, char *src)
 	}
 	for (i = dest_count, j = 0; i < (src_count + dest_count + 1); i++, j++)
 	{
-		if (i == src_count + dest_count)
-		{
-			dest[i] = '\0';
-			break;
-		}
 		dest[i] = src[j];
 	}
+	dest[src_count + dest_count] = '\0';
 	return (dest);
 }
