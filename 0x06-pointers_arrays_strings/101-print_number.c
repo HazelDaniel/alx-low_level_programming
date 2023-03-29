@@ -11,6 +11,7 @@ void print_number(int n)
 	int dig_base = 10;
 	int asc_num_base = 48;
 	int dig_least = 0;
+
 	if (n >= dig_base)
 	{
 		if (n < dig_base)
