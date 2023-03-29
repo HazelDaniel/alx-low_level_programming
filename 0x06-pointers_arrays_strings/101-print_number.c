@@ -8,27 +8,30 @@
 
 void print_number(int n)
 {
-	if (n >= 10)
+	int dig_base = 10;
+	int asc_num_base = 48;
+	int dig_least = 0;
+	if (n >= dig_base)
 	{
-		if (n < 10)
+		if (n < dig_base)
 		{
 			return;
 		}
 		else
 			{
-			print_number(n / 10);
-			_putchar((n % 10) + 48);
+			print_number(n / dig_base);
+			_putchar((n % dig_base) + asc_num_base);
 		}
 		first_dig(n);
 	}
-	else if (-n > 0)
+	else if (-n > dig_least)
 	{
 		_putchar((int)'-');
 		print_number(-n);
 	}
 	else
 	{
-		_putchar(n + 48);
+		_putchar(n + asc_num_base);
 	}
 }
 
@@ -40,14 +43,16 @@ void print_number(int n)
 
 int first_dig(int x)
 {
+	int dig_base = 10;
+	int dig_least = 0;
 	int po = 0, init_x = x;
 
-	while (x / 10 > 0)
+	while (x / dig_base > dig_least)
 	{
 		po++;
-		x /= 10;
+		x /= dig_base;
 	}
-	return ((init_x / power(10, po)));
+	return ((init_x / power(dig_base, po)));
 }
 
 /**
@@ -60,14 +65,16 @@ int first_dig(int x)
 
 int power(int a, int b)
 {
+	int even_base = 2, unity = 1;
+	int dig_least = 0;
 	int result = 1;
 
-	while (b > 0)
+	while (b > dig_least)
 	{
-		if (b % 2 == 1)
+		if (b % even_base == unity)
 			result *= a;
 		a *= a;
-		b /= 2;
+		b /= even_base;
 	}
 	return (result);
 }
