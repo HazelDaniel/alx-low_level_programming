@@ -18,6 +18,8 @@ void print_line(char *c, int s, int l)
 		if (j <= s)
 		{
 			printf("%02x", c[l * 10 + j]);
+			if (j % 2 == 1)
+				printf(" ");
 		}
 		else
 		{
