@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
-  * _puts_recursion - a function that prints
+* _puts_recursion - a function that print s
 	* a string using recursion
+
+/**
+  * _puts_recursion - the function name
   * @s: parameter of type char *.
   * Return: void .
  */
