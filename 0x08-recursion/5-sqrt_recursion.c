@@ -35,10 +35,12 @@ int square_root_bin_search(int n, int start, int end)
 	int mid, mid_square;
 	int square_root;
 
-	if (start > end)
-		return (-1);
 	mid = (start + end) / 2;
 	mid_square = mid * mid;
+
+	if (start > end)
+		return (-1);
+
 	if (mid_square == n)
 	{
 		square_root = mid;
