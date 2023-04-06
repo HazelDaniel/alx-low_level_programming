@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -10,12 +10,11 @@
 */
 int main(int argc, char *argv[], char *envp[])
 {
-	int i;
-
-	(void)argc, (void)envp;
-	for (i = 1; i < argc; i++)
+	(void)envp;
+	if (argc != 3)
 	{
-		printf("%s\n", argv[i]);
+		return (1);
 	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (EXIT_SUCCESS);
 }
