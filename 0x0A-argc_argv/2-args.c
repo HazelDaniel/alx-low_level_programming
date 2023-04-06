@@ -10,7 +10,11 @@
 */
 int main(int argc, char *argv[], char *envp[])
 {
-	(void)envp, (void)argv;
-	printf("%d\n", argc - 1);
+	int i;
+	(void)argc, (void)envp;
+	for (i = 1; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
 	return (EXIT_SUCCESS);
 }
