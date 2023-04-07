@@ -13,7 +13,7 @@ int main(int argc, char *argv[], char *envp[])
 	int i;
 
 	(void)argc, (void)envp;
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
 		printf("%s\n", argv[i]);
 	}
