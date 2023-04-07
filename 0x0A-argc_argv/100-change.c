@@ -48,7 +48,7 @@ int main(int argc, char *argv[], char *envp[])
 			printf("Error\n");
 			return (1);
 		}
-		printf("sum is %d\n", sum);
+		printf("%d\n", sum);
 	}
 	return (EXIT_SUCCESS);
 }
