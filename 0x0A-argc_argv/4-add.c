@@ -32,7 +32,7 @@ int main(int argc, char *argv[], char *envp[])
 				return (1);
 			}
 		}
-		printf("%d", sum);
+		printf("%d\n", sum);
 	}
 	return (EXIT_SUCCESS);
 }
