@@ -22,4 +22,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 int get_first_occurrence(char *s, char *accept);
-#endif /* 	_MAIN_	*/
+#endif	/*_MAIN_*/
