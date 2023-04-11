@@ -1,7 +1,10 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 
 int get_count(char *s1, char *s2);
 int get_count_str(char *s1);
+int null_like(char *s1);
 /*apparently, there is no room for function overloading in c.*/
 
 /**
@@ -15,11 +18,11 @@ char *str_concat(char *s1, char *s2)
 	int count = 0, i = 0, j = 0;
 	char *temp_str;
 
-	if (s1 == NULL && s2 == NULL)
+	if (null_like(s1) && null_like(s2))
 	{
 		temp_str = (char *)malloc(sizeof(char));
 	}
-	else if (s1 == NULL && s2 != NULL)
+	else if (null_like(s1) && !(null_like(s2)))
 	{
 		count = get_count_str(s2);
 		temp_str = (char *)malloc(count * sizeof(char));
@@ -28,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		while (*(s2 + j) != '\0')
 			*(temp_str + i) = *(s2 + j), i++, j++;
 	}
-	else if (s1 != NULL && s2 == NULL)
+	else if (!(null_like(s1)) && null_like(s2))
 	{
 		count = get_count_str(s1);
 		temp_str = (char *)malloc(count * sizeof(char));
@@ -41,7 +44,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		count = get_count(s1, s2);
 		temp_str = (char *)malloc(count * sizeof(char));
-		if (temp_str != NULL)
+		if (temp_str == NULL)
 			return (temp_str);
 		while (*(s1 + i) != '\0')
 			*(temp_str + i) = *(s1 + i), i++;
@@ -56,15 +59,11 @@ char *str_concat(char *s1, char *s2)
   * get_count - the function name
   * @s1: parameter of type char *.
   * @s2: parameter of type char *.
-  * Return: char *.
+  * Return: int.
  */
 int get_count(char *s1, char *s2)
 {
-	int count = 0;
-
-	while (*(s1 + count) != '\0' || *(s2 + count) != '\0')
-		count++;
-	return (count);
+	return (strlen(s1) + strlen(s2));
 }
 /**
   * get_count_str - the function name
@@ -79,3 +78,15 @@ int get_count_str(char *s1)
 		count++;
 	return (count);
 }
+/**
+  * null_like - the function name
+  * @s1: parameter of type char *.
+  * Return: char *.
+ */
+int null_like(char *s1)
+{
+	if (s1 == NULL || *s1 == 0)
+		return (1);
+	return (0);
+}
+
