@@ -8,7 +8,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **temp = NULL, count = 0;
+	int **temp = NULL, count = 0, alloc_fail = 0;
 
 	if (width > 0 && height > 0)
 	{
@@ -19,14 +19,21 @@ int **alloc_grid(int width, int height)
 			{
 				*(temp + count) = (int *)calloc(width, sizeof(int));
 				if (*(temp + count) == NULL)
-				{
-					free(*(temp + count));
-				}
+					alloc_fail++;
 			}
 		}
 		else
 		{
+			alloc_fail++;
+		}
+		if (alloc_fail)
+		{
+			for (; count < height; count++)
+			{
+				free(*(temp + count));
+			}
 			free(temp);
+			return NULL;
 		}
 	}
 	return (temp);
