@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 	else
 	{
 		count = get_count(s1, s2);
-		temp_str = (char *)malloc(count * sizeof(char));
+		temp_str = (char *)malloc(count * sizeof(char) + 1);
 		if (temp_str == NULL)
 			return (temp_str);
 		while (*(s1 + i) != '\0')
