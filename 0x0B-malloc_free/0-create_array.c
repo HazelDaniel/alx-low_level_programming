@@ -14,9 +14,12 @@ char *create_array(unsigned int size, char c)
 	if (size > 0)
 	{
 		temp_str = (char *)malloc(size * sizeof(char) + 1);
-		for (; count < (int)size; count++)
+		if (temp_str != NULL)
 		{
-			*(temp_str + count) = c;
+			for (; count < (int)size; count++)
+			{
+				*(temp_str + count) = c;
+			}
 		}
 	}
 	return (temp_str);

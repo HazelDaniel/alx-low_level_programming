@@ -13,9 +13,12 @@ int **alloc_grid(int width, int height)
 	if (width > 0 && height > 0)
 	{
 		temp = (int **)calloc(height, sizeof(int *));
-		for (; count < height; count++)
+		if (temp != NULL)
 		{
-			*(temp + count) = (int *)calloc(width, sizeof(int));
+			for (; count < height; count++)
+			{
+				*(temp + count) = (int *)calloc(width, sizeof(int));
+			}
 		}
 	}
 	return (temp);
