@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 			*(temp_str + str_count) = arg[s_index];
 			s_index++;
 			str_count++;
-			temp_str = realloc(temp_str, str_count);
+			temp_str = realloc(temp_str, str_count + 1);
 		}
 		if (*(arg + (s_index)) == '\0')
 		{
