@@ -18,7 +18,15 @@ int **alloc_grid(int width, int height)
 			for (; count < height; count++)
 			{
 				*(temp + count) = (int *)calloc(width, sizeof(int));
+				if (*(temp + count) == NULL)
+				{
+					free(*(temp + count));
+				}
 			}
+		}
+		else
+		{
+			free(temp);
 		}
 	}
 	return (temp);
