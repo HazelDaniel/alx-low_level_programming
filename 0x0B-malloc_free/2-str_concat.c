@@ -6,7 +6,6 @@ int get_count(char *s1, char *s2);
 int get_count_str(char *s1);
 int null_like(char *s1);
 /*apparently, there is no room for function overloading in c.*/
-
 /**
   * str_concat - the function name
   * @s1: parameter of type char *.
