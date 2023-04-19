@@ -5,11 +5,12 @@
  * main - entry point to the program
  * @argc: argument count.
  * @argv: argument vector.
+ * @envp: environment pointer
  * Return: int
  */
 int main(int argc, char *argv[], char *envp[])
 {
-	char *opc = (char *) main;
+	char *opcode = (char *)main;
 	int i, bytes_num;
 	(void)envp;
 
@@ -29,7 +30,7 @@ int main(int argc, char *argv[], char *envp[])
 
 	for (i = 0; i < bytes_num; i++)
 	{
-		printf("%02x", opc[i] & 0xFF);
+		printf("%02x", opcode[i] & 0xFF);
 		if (i != bytes_num - 1)
 			printf(" ");
 	}
