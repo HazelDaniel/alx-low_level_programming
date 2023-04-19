@@ -25,11 +25,6 @@ int main (int argc, char *argv[])
 		exit(100);
 	}
 	eval = get_op_func(argv[2]);
-	if (eval == NULL)
-	{
-		puts("Error");
-		exit(99);
-	}
 	result = eval(op1, op2);
 	printf("%d\n", result);
 	return (0);
