@@ -1,9 +1,10 @@
 #include "3-calc.h"
 
-int main (int argc, char *argv[])
+int main (int argc, char *argv[], char *envp[])
 {
 	int op1, op2;
 	int (*eval)(int, int), result;
+	(void)envp;
 
 	if (argc != 4)
 	{
