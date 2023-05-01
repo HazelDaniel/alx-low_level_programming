@@ -22,6 +22,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		head_node_ptr = head_node_ptr->next;
 		++j;
 	}
+	if (idx > j + 2)
+		return (NULL);
 	tmp = head_node_ptr->next;
 	head_node_ptr->next = new;
 	new->next = tmp;
