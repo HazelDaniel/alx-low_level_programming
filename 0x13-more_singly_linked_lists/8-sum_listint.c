@@ -17,8 +17,8 @@ int sum_listint(listint_t *head)
 
 	while (head_node)
 	{
+		sum += head_node->n;
 		head_node = head_node->next;
-		++sum;
 	}
 	return (sum);
 }
