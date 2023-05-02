@@ -23,7 +23,8 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("%d\n", fast->next->n);
 			printf("%d\n", fast->next->next->n);
-			exit(98);
+			list_sum += 2;
+			return(list_sum);
 		}
 		h = h->next;
 		if (fast != NULL && fast->next != NULL)
