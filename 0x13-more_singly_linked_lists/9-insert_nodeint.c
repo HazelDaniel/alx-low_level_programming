@@ -17,6 +17,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	head_node_ptr = *head;
 	new = (listint_t *)malloc(sizeof(listint_t));
+	new->n = n;
+	if (idx == 0)
+	{
+		new->next = *head;
+		*head = new;
+		return (new);
+
+	}
 	while (head_node_ptr != NULL && j < idx - 1)
 	{
 		head_node_ptr = head_node_ptr->next;
