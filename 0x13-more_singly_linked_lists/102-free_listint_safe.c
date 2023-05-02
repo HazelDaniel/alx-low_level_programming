@@ -8,8 +8,9 @@
  **/
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *curr = *h, *prev;
-	listint_t *fast = *h, *slow = *h;
+	listint_t *curr = *h, *prev, *fast = *h,
+	*slow = *h;
+	unsigned int s_list = 0;
 
 	while (curr != NULL)
 	{
@@ -19,12 +20,18 @@ size_t free_listint_safe(listint_t **h)
 		{
 			fast = fast->next->next;
 			slow = slow->next;
+			++s_list;
 		}
 		if (fast == slow)
+		{
+			printf("%d\n", fast->next->n);
+			printf("%d\n", fast->next->next->n);
+			s_list += 2;
 			exit(98);
+		}
 		free(prev);
 	}
 
 	*h = NULL;
-	return (0);
+	return (s_list);
 }
