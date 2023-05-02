@@ -24,7 +24,6 @@ size_t free_listint_safe(listint_t **h)
 		}
 		if (fast == slow)
 		{
-			s_list += 2;
 			exit(98);
 		}
 		free(prev);
