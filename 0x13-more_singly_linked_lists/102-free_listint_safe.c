@@ -20,7 +20,7 @@ size_t free_listint_safe(listint_t **h)
 		{
 			fast = fast->next->next;
 			slow = slow->next;
-			++s_list;
+			s_list++;
 		}
 		if (fast == slow)
 		{
