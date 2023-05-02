@@ -22,8 +22,8 @@ size_t print_listint_safe(const listint_t *head)
 		if (fast != NULL && fast->next != NULL)
 		{
 			fast = fast->next->next;
-			slow = slow->next;
 		}
+		slow = slow->next;
 		if (fast == slow)
 			exit(98);
 
