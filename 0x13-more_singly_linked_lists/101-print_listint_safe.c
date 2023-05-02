@@ -14,18 +14,23 @@ size_t print_listint_safe(const listint_t *head)
 
 	if (head == NULL)
 		return (-1);
+	fast = (listint_t *)head->next;
 
 	while (h != NULL)
 	{
 		printf("%d\n", h->n);
+		if (fast == slow)
+		{
+			printf("%d\n", fast->next->n);
+			printf("%d\n", fast->next->next->n);
+			exit(98);
+		}
 		h = h->next;
 		if (fast != NULL && fast->next != NULL)
 		{
 			fast = fast->next->next;
+			slow = slow->next;
 		}
-		slow = slow->next;
-		if (fast == slow)
-			exit(98);
 
 		++list_sum;
 	}
