@@ -8,24 +8,26 @@
  **/
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *curr = *h, *fast = (*h)->next,
+	listint_t *curr = *h, *prev, *fast = *h,
 	*slow = *h;
 	unsigned int s_list = 0;
 
 	while (curr != NULL)
 	{
+		prev = curr;
 		curr = curr->next;
 		if (fast != NULL && fast->next != NULL)
 		{
 			fast = fast->next->next;
 			slow = slow->next;
-			s_list++;
+			++s_list;
 		}
 		if (fast == slow)
 		{
 			s_list += 2;
 			exit(98);
 		}
+		free(prev);
 	}
 
 	*h = NULL;
