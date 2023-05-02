@@ -24,8 +24,6 @@ size_t free_listint_safe(listint_t **h)
 		}
 		if (fast == slow)
 		{
-			printf("%d\n", fast->next->n);
-			printf("%d\n", fast->next->next->n);
 			s_list += 2;
 			exit(98);
 		}
