@@ -21,6 +21,7 @@ int main(int argc, char *argv[], char *envp[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]);
+		/* this was the cause of the failed checks*/
 		exit(97);
 	}
 	cp_file(argv[1], argv[2]);
