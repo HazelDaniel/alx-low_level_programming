@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * free_dlistint - a function that frees up
+ * a doubly linked list
+ * @head: the head of the linked list
+ * Return: void
+ **/
 void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *current = head;

@@ -1,12 +1,20 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * insert_dnodeint_at_index - a function that inserts a node
+ * into a doubly linked list at a particular index
+ * @h: the addresss of the head of the linked list
+ * @idx: the index
+ * @n: the value of the node
+ * Return: dlistint_t *
+ **/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *current = *h, *prev;
 	unsigned int count = 0;
-
 	dlistint_t *new_node = (dlistint_t *)malloc(sizeof(dlistint_t));
+
 	new_node->n = n;
 	new_node->prev = NULL;
 	new_node->next = NULL;
