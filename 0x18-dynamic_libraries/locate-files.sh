@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat main.h | grep -Po '( ((?<=)|(?<=\*)))\w+(?=\()' | tee _file_functions_ 1> /dev/null
+cat main.h | grep -Po '(((?<= )|(?<=\*)))\w+(?=\()' | tee _file_functions_ 1> /dev/null
 count=0
 for line in $(cat _file_functions_); do
 	line_cut=$(echo $line | tr -dc '[:alnum:]')
