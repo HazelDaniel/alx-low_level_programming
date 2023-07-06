@@ -142,4 +142,5 @@ void hash_table_print(const hash_table_t *ht)
 		table_print[i] = '}', table_print[i + 1] = '\0';
 
 	printf("%s\n", table_print);
+	free(table_print);
 }
