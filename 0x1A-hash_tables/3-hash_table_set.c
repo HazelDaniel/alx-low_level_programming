@@ -22,7 +22,8 @@ int null_like(char *s)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	int index;
-	hash_node_t *new = (hash_node_t *)malloc(sizeof(hash_node_t)), *curr, *prev = NULL;
+	hash_node_t *new = (hash_node_t *)malloc(sizeof(hash_node_t)),
+	*curr, *prev = NULL;
 
 	if (!ht || !new || null_like((char *)key))
 	{
@@ -30,18 +31,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	index = key_index((const unsigned char *)key, ht->size);
-	new->value = strdup(value);
-	new->key = strdup(key);
-	new->next = NULL;
+	new->value = strdup(value), new->key = strdup(key), new->next = NULL;
 
 	if (ht->array[index])
 	{
 		curr = ht->array[index];
 		while (curr && strcmp(curr->key, key))
-		{
-			prev = curr;
-			curr = curr->next;
-		}
+			prev = curr, curr = curr->next;
 		if (!curr)
 		{
 			new->next = ht->array[index];
@@ -55,9 +51,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 				prev->next = new;
 			else
 				ht->array[index] = new;
-			free(curr->value);
-			free(curr->key);
-			free(curr);
+			free(curr->value), free(curr->key), free(curr);
 			return (1); /* already set, exact value */
 		}
 	}

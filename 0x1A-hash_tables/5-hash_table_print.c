@@ -130,7 +130,8 @@ void hash_table_print(const hash_table_t *ht)
 			while (curr)
 			{
 				tmp = table_print;
-				table_print = _strvcat(table_print, "'", curr->key, "': ", "'", curr->value, "', ", NULL);
+				table_print = _strvcat(table_print, "'", curr->key,
+				 "': ", "'", curr->value, "', ", NULL);
 				free(tmp), curr = curr->next;
 			}
 		}
