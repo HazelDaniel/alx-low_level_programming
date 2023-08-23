@@ -4,7 +4,6 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = $(ls  | grep -P "#.*~?|.*~")
-# rm -f $(OBJ) $(NAME) 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
