@@ -22,28 +22,36 @@ def get_adjacent_cells(matrix, coordinate):
 
     if index_exists(matrix, x_index - 1, y_index - 1) and\
             matrix[x_index - 1][y_index - 1] == 1:
-        res_adj_list.append((x_index - 1, y_index - 1))
+        if (x_index - 1 >= 0 and y_index - 1 >= 0):
+            res_adj_list.append((x_index - 1, y_index - 1))
     if index_exists(matrix, x_index - 1, y_index) and\
             matrix[x_index - 1][y_index] == 1:
-        res_adj_list.append((x_index - 1, y_index))
+        if (x_index - 1 >= 0 and y_index >= 0):
+            res_adj_list.append((x_index - 1, y_index))
     if index_exists(matrix, x_index - 1, y_index + 1) and\
             matrix[x_index - 1][y_index + 1] == 1:
-        res_adj_list.append((x_index - 1, y_index + 1))
+        if (x_index - 1 >= 0 and y_index + 1 >= 0):
+            res_adj_list.append((x_index - 1, y_index + 1))
     if index_exists(matrix, x_index, y_index + 1) and\
             matrix[x_index][y_index + 1] == 1:
-        res_adj_list.append((x_index, y_index + 1))
+        if (x_index >= 0 and y_index + 1 >= 0):
+            res_adj_list.append((x_index, y_index + 1))
     if index_exists(matrix, x_index + 1, y_index + 1) and\
             matrix[x_index + 1][y_index + 1] == 1:
-        res_adj_list.append((x_index + 1, y_index + 1))
+        if (x_index + 1 >= 0 and y_index + 1 >= 0):
+            res_adj_list.append((x_index + 1, y_index + 1))
     if index_exists(matrix, x_index + 1, y_index) and\
             matrix[x_index + 1][y_index] == 1:
-        res_adj_list.append((x_index + 1, y_index))
+        if (x_index + 1 >= 0 and y_index >= 0):
+            res_adj_list.append((x_index + 1, y_index))
     if index_exists(matrix, x_index + 1, y_index - 1) and\
             matrix[x_index + 1][y_index - 1] == 1:
-        res_adj_list.append((x_index + 1, y_index - 1))
+        if (x_index + 1 >= 0 and y_index - 1 >= 0):
+            res_adj_list.append((x_index + 1, y_index - 1))
     if index_exists(matrix, x_index, y_index - 1) and\
             matrix[x_index][y_index - 1] == 1:
-        res_adj_list.append((x_index, y_index - 1))
+        if (x_index >= 0 and y_index - 1 >= 0):
+            res_adj_list.append((x_index, y_index - 1))
 
     return res_adj_list
 
@@ -63,4 +71,4 @@ def island_perimeter(grid):
                                   *([item for
                                       item in adjacent_cells if
                                       item not in adjacency_list])]
-    return 2 * len(adjacency_list) + 2
+    return (2 * len(adjacency_list)) + 2
