@@ -13,7 +13,8 @@ def index_exists(matrix, r_ind, c_ind):
 
 def get_adjacent_cells(matrix, coordinate):
     """a function that returns a tuple containing the coordinates
-        of adjacent cells in a given matrix"""
+        of adjacent cells in a given matrix
+        based on some conditions"""
     x_index, y_index = coordinate
     res_adj_list = []
     if not index_exists(matrix, x_index, y_index):
