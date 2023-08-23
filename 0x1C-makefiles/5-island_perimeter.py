@@ -63,7 +63,7 @@ def island_perimeter(grid):
         return
     for row_index, row in enumerate(grid):
         for col_index, column in enumerate(row):
-            if not column:
+            if column:
                 continue
             adjacent_cells = get_adjacent_cells(grid, (row_index, col_index))
             if adjacent_cells:
