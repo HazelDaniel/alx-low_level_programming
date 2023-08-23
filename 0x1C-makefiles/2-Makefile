@@ -1,10 +1,7 @@
 # this makefile uses variables to compile to an output executable
 CC = gcc
-SRC := main.c school.c
-OBJ := main.o school.o
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
 NAME = school
 all:
-	$(CC) -c $(word 1, $(SRC)) -o $(word 1, $(OBJ))
-	$(CC) -c $(word 2, $(SRC)) -o $(word 2, $(OBJ))
-	$(CC) $(word 1, $(OBJ)) $(word 2, $(OBJ)) -o $(NAME)
-	rm -f *.o
+	$(CC) $(OBJ) -o $(NAME)
