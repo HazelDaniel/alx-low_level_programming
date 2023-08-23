@@ -19,10 +19,6 @@ def get_adjacent_cells(matrix, coordinate):
     if not index_exists(matrix, x_index, y_index):
         return res_adj_list
 
-    # if index_exists(matrix, x_index - 1, y_index - 1) and\
-    #         matrix[x_index - 1][y_index - 1] == 0:
-    #     if (x_index - 1 >= 0 and y_index - 1 >= 0):
-    #         res_adj_list.append((x_index - 1, y_index - 1))
     if index_exists(matrix, x_index - 1, y_index)\
             and x_index - 1 >= 0 and y_index >= 0:
         """up"""
@@ -30,10 +26,6 @@ def get_adjacent_cells(matrix, coordinate):
             res_adj_list.append((x_index - 1, y_index))
     else:
         res_adj_list.append((x_index, y_index))
-    # if index_exists(matrix, x_index - 1, y_index + 1) and\
-    #         matrix[x_index - 1][y_index + 1] == 0:
-    #     if (x_index - 1 >= 0 and y_index + 1 >= 0):
-    #         res_adj_list.append((x_index - 1, y_index + 1))
     if index_exists(matrix, x_index, y_index + 1)\
             and x_index >= 0 and y_index + 1 >= 0:
         """right"""
@@ -41,10 +33,6 @@ def get_adjacent_cells(matrix, coordinate):
             res_adj_list.append((x_index, y_index + 1))
     else:
         res_adj_list.append((x_index, y_index))
-    # if index_exists(matrix, x_index + 1, y_index + 1) and\
-    #         matrix[x_index + 1][y_index + 1] == 0:
-    #     if (x_index + 1 >= 0 and y_index + 1 >= 0):
-    #         res_adj_list.append((x_index + 1, y_index + 1))
     if index_exists(matrix, x_index + 1, y_index)\
             and (x_index + 1 >= 0 and y_index >= 0):
         """down"""
@@ -53,10 +41,6 @@ def get_adjacent_cells(matrix, coordinate):
     else:
         res_adj_list.append((x_index, y_index))
 
-    # if index_exists(matrix, x_index + 1, y_index - 1) and\
-    #         matrix[x_index + 1][y_index - 1] == 0:
-    #     if (x_index + 1 >= 0 and y_index - 1 >= 0):
-    #         res_adj_list.append((x_index + 1, y_index - 1))
     if index_exists(matrix, x_index, y_index - 1)\
             and (x_index >= 0 and y_index - 1 >= 0):
         """left"""
