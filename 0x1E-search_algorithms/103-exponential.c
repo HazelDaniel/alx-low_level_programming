@@ -35,7 +35,7 @@ static void print_sequence(int *array, size_t size)
  * @value: the target value
  * Return: the first occurrence of the target or -1
  **/
-int binary_search_mod(int *array, size_t low, size_t high, int value)
+static int binary_search_mod(int *array, size_t low, size_t high, int value)
 {
 	size_t mid = (low + high) >> 1;
 
