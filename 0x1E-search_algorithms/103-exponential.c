@@ -104,6 +104,13 @@ int exponential_search(int *array, size_t size, int value)
 		exp = exp << 1;
 	}
 
+	if (exp_old == exp - 1)
+	{
+		if (array[exp_old] == value)
+			return (exp_old);
+		else
+			return (-1);
+	}
 	printf("Value found between indexes [%u] and [%u]\n",
 				(unsigned int)exp_old, (unsigned int)min(exp, size - 1));
 	res_index = binary_search_mod(array, exp_old, min(exp, size - 1), value);
