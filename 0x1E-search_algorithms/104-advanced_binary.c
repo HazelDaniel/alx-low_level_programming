@@ -105,6 +105,9 @@ int advanced_binary(int *array, size_t size, int value)
 	size_t mid = (size) >> 1;
 	int duplicate = 0;
 
+	if (!array)
+		return (-1);
+
 	if (((array[mid] == array[mid - 1]) && (array[mid] == value)) ||
 		((array[mid] == array[mid + 1]) && (array[mid] == value)))
 		duplicate = 1;
