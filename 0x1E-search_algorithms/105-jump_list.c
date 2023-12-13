@@ -3,6 +3,11 @@
 #include <math.h>
 #include "utils/utils-1.c"
 
+/* BUGFIX: there's an edge case not properly -
+ * handled - cases where we have one item in the list and the node
+ * value doesn't correspond to the given value. try to fix it
+ * */
+
 /**
  * pr - prints a sequence of integers
  * given the starting node and the end node unless
