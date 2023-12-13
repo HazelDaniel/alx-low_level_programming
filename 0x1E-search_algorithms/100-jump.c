@@ -123,9 +123,7 @@ int jump_search(int *array, size_t size, int value)
 		}
 		else if (array[y] == value)
 		{
-			printf("Value found between indexes [%u] and [%u]\n", (unsigned int)tmp, (unsigned int)y);
-			for (l = tmp; l <= size - 1 && l <= y; l++)
-				printf("Value checked array[%u] = [%d]\n", (unsigned int)l, array[l]);
+			print_range(tmp, y, size, array);
 			return (y);
 		}
 		i++, k++;
