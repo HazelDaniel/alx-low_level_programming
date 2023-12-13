@@ -28,7 +28,8 @@ int jump_search(int *array, size_t size, int value)
 {
 	size_t m = (size_t)sqrt(size), k = 1, i = 0, y = 0, x, j, tmp = 0, l = 0;
 
-	(void)tmp;
+	if (!array)
+		return (-1);
 	while (i < size)
 	{
 		if (y < size)
