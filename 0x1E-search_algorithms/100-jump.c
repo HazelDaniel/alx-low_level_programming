@@ -17,7 +17,7 @@ size_t min(size_t x, size_t y)
 }
 
 /**
- * print_range - prints a sequence of integers
+ * pr - prints a sequence of integers
  * at indices in a specified range
  * @start: the starting index
  * @end: the ending index
@@ -25,7 +25,7 @@ size_t min(size_t x, size_t y)
  * @array: the sequence array
  * Return: void
  **/
-void print_range(size_t start, size_t end, size_t size, int *array)
+void pr(size_t start, size_t end, size_t size, int *array)
 {
 	size_t l;
 
@@ -36,12 +36,12 @@ void print_range(size_t start, size_t end, size_t size, int *array)
 }
 
 /**
- * print_value_checked - prints a value given its index
+ * pvc - prints a value given its index
  * @index: the provided index
  * @array: the array containing the value
  * Return: void
  **/
-void print_value_checked(int *array, size_t index)
+void pvc(int *array, size_t index)
 {
 	printf("Value checked array[%u] = [%d]\n", (unsigned int)index, array[index]);
 }
@@ -91,14 +91,12 @@ int jump_search(int *array, size_t size, int value)
 		return (-1);
 	while (i < size && y < size)
 	{
-		print_value_checked(array, y);
+		pvc(array, y);
 		y = min(m * k, size);
 		if (y == size)
 			return (-1);
 		if (y == size - 1)
-			print_value_checked(array, y), tmp = y, y = m * (k + 1), \
-			print_range(tmp, y, size, array);
-
+			pvc(array, y), tmp = y, y = m * (k + 1), pr(tmp, y, size, array);
 		if (array[y] > value)
 		{
 			x = m * (k - 1), j = y, j += 1;
@@ -119,7 +117,7 @@ int jump_search(int *array, size_t size, int value)
 		}
 		else if (array[y] == value)
 		{
-			print_range(tmp, y, size, array);
+			pr(tmp, y, size, array);
 			return (y);
 		}
 		i++, k++, tmp = y;
