@@ -91,17 +91,15 @@ int jump_search(int *array, size_t size, int value)
 		return (-1);
 	while (i < size && y < size)
 	{
-		printf("Value checked array[%u] = [%d]\n", (unsigned int)y, array[y]);
+		print_value_checked(array, y);
 		y = min(m * k, size);
 		if (y == size)
 			return (-1);
 		if (y == size - 1)
 		{
-			printf("Value checked array[%u] = [%d]\n", (unsigned int)y, array[y]);
+			print_value_checked(array, y);
 			tmp = y, y = m * (k + 1);
-			printf("Value found between indexes [%u] and [%u]\n", (unsigned int)tmp, (unsigned int)y);
-			for (l = tmp; l < size && l <= y; l++)
-				printf("Value checked array[%u] = [%d]\n", (unsigned int)l, array[l]);
+			print_range(tmp, y, size, array);
 		}
 
 		if (array[y] > value)
