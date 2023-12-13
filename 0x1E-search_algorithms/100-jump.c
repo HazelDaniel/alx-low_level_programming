@@ -85,43 +85,55 @@ int last_check(size_t curr_ind, size_t size, int *array, int value)
  **/
 int jump_search(int *array, size_t size, int value)
 {
-	size_t m = (size_t)sqrt(size), k = 1, i = 0, y = 0, x, j, tmp = 0;
+	size_t m = (size_t)sqrt(size), k = 1, i = 0, y = 0, x, j, tmp = 0, l = 0;
 
 	if (!array)
 		return (-1);
-	while (i < size && y < size)
+	while (i < size)
 	{
-		print_value_checked(array, y), y = min(m * k, size);
+		if (y < size)
+			printf("Value checked array[%u] = [%d]\n", (unsigned int)y, array[y]);
+		y = min(m * k, size);
 		if (y == size)
-			return (array[0] == value ? 0 : -1); /* edge case:  y always > n*/
+			return (-1);
 		if (y == size - 1)
 		{
-			print_value_checked(array, y), tmp = y, y = m * (k + 1);
-			print_range(tmp, y, size, array);
+			printf("Value checked array[%u] = [%d]\n", (unsigned int)y, array[y]);
+			tmp = y, y = m * (k + 1);
+			printf("Value found between indexes [%u] and [%u]\n", (unsigned int)tmp, (unsigned int)y);
+			for (l = tmp; l < size && l <= y; l++)
+				printf("Value checked array[%u] = [%d]\n", (unsigned int)l, array[l]);
 		}
+
 		if (array[y] > value)
 		{
-			x = m * (k - 1), j = y, j += 1;
-			while (j-- >= x)
+			x = m * (k - 1), j = y;
+			while (j >= x)
 			{
 				if (array[j] == value)
 				{
-					print_range(x, j, size, array);
+					printf("Value found between indexes [%u] and [%u]\n", (unsigned int)x, (unsigned int)y);
+					for (l = x; l <= size - 1 && l <= j; l++)
+						printf("Value checked array[%u] = [%d]\n", (unsigned int)l, array[l]);
 					return (j);
 				}
 				else if (array[j] < value)
 				{
 					return (-1);
 				}
+				j--;
 			}
 		}
 		else if (array[y] == value)
 		{
-			print_range(tmp, y, size, array);
+			printf("Value found between indexes [%u] and [%u]\n", (unsigned int)tmp, (unsigned int)y);
+			for (l = tmp; l <= size - 1 && l <= y; l++)
+				printf("Value checked array[%u] = [%d]\n", (unsigned int)l, array[l]);
 			return (y);
 		}
-		i++, k++, tmp = y;
+		i++, k++;
+		tmp = y;
 	}
 
-	return (array[0] == value ? 0 : -1);
+	return (-1);
 }
