@@ -90,6 +90,8 @@ int jump_search(int *array, size_t size, int value)
 
 	if (!array)
 		return (-1);
+	if (array[0] == value)
+		return (0);
 	while (i < size && y < size)
 	{
 		pvc(array, y), y = min(m * k, size - 1);
