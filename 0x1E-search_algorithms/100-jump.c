@@ -96,11 +96,8 @@ int jump_search(int *array, size_t size, int value)
 		if (y == size)
 			return (-1);
 		if (y == size - 1)
-		{
-			print_value_checked(array, y);
-			tmp = y, y = m * (k + 1);
+			print_value_checked(array, y), tmp = y, y = m * (k + 1), \
 			print_range(tmp, y, size, array);
-		}
 
 		if (array[y] > value)
 		{
@@ -109,9 +106,9 @@ int jump_search(int *array, size_t size, int value)
 			{
 				if (array[j] == value)
 				{
-					printf("Value found between indexes [%u] and [%u]\n", (unsigned int)x, (unsigned int)y);
+					printf("Value found between indexes [%lu] and [%lu]\n", x, y);
 					for (l = x; l <= size - 1 && l <= j; l++)
-						printf("Value checked array[%u] = [%d]\n", (unsigned int)l, array[l]);
+						printf("Value checked array[%lu] = [%d]\n", l, array[l]);
 					return (j);
 				}
 				else if (array[j] < value)
@@ -125,8 +122,7 @@ int jump_search(int *array, size_t size, int value)
 			print_range(tmp, y, size, array);
 			return (y);
 		}
-		i++, k++; tmp = y;
+		i++, k++, tmp = y;
 	}
-
 	return (-1);
 }
