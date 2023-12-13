@@ -47,6 +47,34 @@ void print_value_checked(int *array, size_t index)
 }
 
 /**
+ * last_check - handles edge cases with arrays of lengths
+ * that are always less than the jump factor
+ * @curr_ind: the current index produced by the jump factor
+ * @size: the size of the input array
+ * @array: the input array
+ * @value: the target value
+ * Return: the index of occurrence or -1
+ **/
+int last_check(size_t curr_ind, size_t size, int *array, int value)
+{
+	int v = curr_ind;
+
+	if (v >= (int)size)
+	{
+		return (-1);
+	}
+	else
+	{
+		while (v-- >= 0)
+		{
+			if (array[v] == value)
+				return (v);
+		}
+		return (-1);
+	}
+}
+
+/**
  * jump_search - a function that implements the jump search
  * algorithm on a sorted array and prints the sequence for
  * each step
@@ -58,24 +86,27 @@ void print_value_checked(int *array, size_t index)
 int jump_search(int *array, size_t size, int value)
 {
 	size_t m = (size_t)sqrt(size), k = 1, i = 0, y = 0, x, j, tmp = 0;
-	int v;
 
 	if (!array)
 		return (-1);
 	while (i < size && y < size)
 	{
 		print_value_checked(array, y), y = min(m * k, size);
+		if (y == size)
+			return (array[0] == value ? 0 : -1); /* edge case:  y always > n*/
 		if (y == size - 1)
-			print_value_checked(array, y), tmp = y, y = m * (k + 1),
-				print_range(tmp, y, size, array);
+		{
+			print_value_checked(array, y), tmp = y, y = m * (k + 1);
+			print_range(tmp, y, size, array);
+		}
 		if (array[y] > value)
 		{
-			x = m * (k - 1), j = y;
-			while (j--, j >= x)
+			x = m * (k - 1), j = y, j += 1;
+			while (j-- >= x)
 			{
 				if (array[j] == value)
 				{
-					print_range(x, y, size, array);
+					print_range(x, j, size, array);
 					return (j);
 				}
 				else if (array[j] < value)
@@ -89,11 +120,8 @@ int jump_search(int *array, size_t size, int value)
 			print_range(tmp, y, size, array);
 			return (y);
 		}
-		i++, k++, tmp = y, v = y;
+		i++, k++, tmp = y;
 	}
-	if (v >= (int)size)
-		for (v = size; v >= 0; --v)
-			if (array[v] == value)
-				return (v);
-	return (-1);
+
+	return (array[0] == value ? 0 : -1);
 }
