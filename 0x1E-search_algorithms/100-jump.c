@@ -104,8 +104,8 @@ int jump_search(int *array, size_t size, int value)
 
 		if (array[y] > value)
 		{
-			x = m * (k - 1), j = y;
-			while (j >= x)
+			x = m * (k - 1), j = y, j += 1;
+			while (j-- >= x)
 			{
 				if (array[j] == value)
 				{
@@ -118,7 +118,6 @@ int jump_search(int *array, size_t size, int value)
 				{
 					return (-1);
 				}
-				j--;
 			}
 		}
 		else if (array[y] == value)
@@ -126,8 +125,7 @@ int jump_search(int *array, size_t size, int value)
 			print_range(tmp, y, size, array);
 			return (y);
 		}
-		i++, k++;
-		tmp = y;
+		i++, k++; tmp = y;
 	}
 
 	return (-1);
