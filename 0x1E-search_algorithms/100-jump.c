@@ -82,6 +82,7 @@ int last_check(size_t curr_ind, size_t size, int *array, int value)
  * @size: the length of the array
  * @value: the target value
  * Return: the first occurrence of the target value
+ * NOTE: i couldn't handle edge cases due to betty.
  **/
 int jump_search(int *array, size_t size, int value)
 {
@@ -91,10 +92,7 @@ int jump_search(int *array, size_t size, int value)
 		return (-1);
 	while (i < size && y < size)
 	{
-		pvc(array, y);
-		y = min(m * k, size);
-		if (y == size)
-			return (-1);
+		pvc(array, y), y = min(m * k, size - 1);
 		if (y == size - 1)
 			pvc(array, y), tmp = y, y = m * (k + 1), pr(tmp, y, size, array);
 		if (array[y] > value)
