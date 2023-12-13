@@ -89,10 +89,9 @@ int jump_search(int *array, size_t size, int value)
 
 	if (!array)
 		return (-1);
-	while (i < size)
+	while (i < size && y < size)
 	{
-		if (y < size)
-			printf("Value checked array[%u] = [%d]\n", (unsigned int)y, array[y]);
+		printf("Value checked array[%u] = [%d]\n", (unsigned int)y, array[y]);
 		y = min(m * k, size);
 		if (y == size)
 			return (-1);
